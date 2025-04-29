@@ -1,0 +1,89 @@
+/* Bỏ viền và làm nền header trắng */
+.custom-calendar {
+    background-color: white;
+    border: none; /* Loại bỏ viền */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Phần tiêu đề tháng */
+  .custom-calendar .react-datepicker__current-month {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: white; /* Đặt nền header thành trắng */
+    padding: 10px 0;
+  }
+  
+  /* Bỏ viền trên của tiêu đề */
+  .custom-calendar .react-datepicker__header {
+    background-color: white; /* Làm nền tiêu đề trắng */
+    border: none; /* Bỏ viền */
+  }
+  
+  /* Nút điều hướng tháng */
+  .custom-calendar .react-datepicker__navigation--previous,
+  .custom-calendar .react-datepicker__navigation--next {
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .custom-calendar .react-datepicker__navigation-icon::before {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Ngày trong tuần */
+  .custom-calendar .react-datepicker__day-name {
+    color: #888;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  
+  /* Ngày mặc định */
+  .custom-calendar .react-datepicker__day {
+    color: #333;
+    font-size: 14px;
+    width: 36px;
+    line-height: 36px;
+    margin: 2px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  /* Ngày hôm nay */
+  .custom-calendar .react-datepicker__day--today {
+    font-weight: bold;
+    color: #3182ce;
+  }
+  
+  /* Ngày được chọn */
+  .custom-calendar .react-datepicker__day--selected {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Hiệu ứng hover cho ngày */
+  .custom-calendar .react-datepicker__day:hover {
+    background-color: #63b3ed;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Bo tròn cạnh các nút điều hướng và làm mờ phông */
+  .custom-calendar .react-datepicker__navigation:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+  }
+  
